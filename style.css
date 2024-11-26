@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+}
+header {
+    background-color: darkslateblue;
+    padding: 1rem;
+}
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+main {
+    margin: 1rem;
+}
+.content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+.content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: slateblue;
+    height: 12rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+.content a:hover {
+    transform: scale(1.01);
+    background-color: darkslateblue;
+}
