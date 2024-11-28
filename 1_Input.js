@@ -23,7 +23,7 @@ function change() {
     out.innerHTML = `
         <input type="text" id="firstname" placeholder="Firstname..." required>
         <input type="text" id="lastname" placeholder="Lastname..." required>
-        <button onclick="conf()">Confirm</button>
+        <button onclick="conf(),wakeup()">Confirm</button>
         <button onclick="wakeup()">Cancel</button>
         `;
 }
@@ -34,6 +34,4 @@ function conf() {
 
     localStorage.setItem("firstname", fname);
     localStorage.setItem("lastname", lname);
-
-
 }
